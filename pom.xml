@@ -7,6 +7,34 @@
     <groupId>ru.le</groupId>
     <artifactId>PyCPaH</artifactId>
     <version>1.0</version>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
-
+    <dependencies>
+        <dependency>
+            <groupId>org.jsoup</groupId>
+            <artifactId>jsoup</artifactId>
+            <version>1.7.2</version>
+        </dependency>
+        <dependency>
+            <groupId>us.codecraft</groupId>
+            <artifactId>xsoup</artifactId>
+            <version>0.3.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.16</version>
+        </dependency>
+    </dependencies>
 </project>
